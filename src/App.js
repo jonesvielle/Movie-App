@@ -15,7 +15,7 @@ function App() {
 	const fetchMovies = (movieName) => {
 		var config = {
 			method: "get",
-			url: `http://www.omdbapi.com/?apikey=741731e7&s=${movieName}`,
+			url: `https://www.omdbapi.com/?apikey=741731e7&s=${movieName}`,
 			headers: {},
 		};
 

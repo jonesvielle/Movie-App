@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+.headerComponent{
+display: flex;
+background-color: #292929;
+height: "100%";
+width:"100%";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerComponent div{
+ margin-left: 77px;
+ margin-top: 40px;
+ margin-bottom: 40px;
+ border: 1px solid #FFFFFF;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerComponent div p{
+color: white;
+margin-left: 9px;
+margin-right: 7px;
+margin-top: 14px;
+margin-bottom: 13px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero{
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 131px;
+  padding-bottom: 150px;
+}
+
+.hero h1{
+  color:white;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  margin-left: 77px;
+  margin-right: 873px;
+
+}
+
+.searchSection{
+  margin-left: 77px;
+  margin-top: 63px;
+  margin-right: 57px;
+
+}
+.searchSection p{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.searchSection input{
+  flex: none;
+  width: 100%;
+  border: 1px solid #000000;
+  height: 54px;
+  margin-bottom: 48px;
+}
+.movieSection{
+  margin-left: 67px;
+  margin-bottom: 48px;
+}
+.movieSection p{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+.movieSection .movie-card{
+  height: 300px;
+  width: 300px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+}
+.carousel{
+  margin-top: 0.1px;
+  display: block;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  /* gap: 13px; */
+  white-space: nowrap;
+  /* overflow-x: hidden; */
+  /* white-space:nowrap; */
+}
+.carousel .movie-card{
+  display: inline-block;
+  background-color: #000000;
+  margin-right: 13px;
+  padding: 10px;
+  height: 300px;
+  /* padding */
 }
 
-.App-link {
-  color: #61dafb;
+.carousel .movie-card .movie-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self: center; */
+  margin-top: 40%;
+  /* line-height: 310px; */
+  /* margin-top: auto; */
+  margin-bottom: 40%;
+  /* background-color: rgb(194, 117, 117); */
+  /* height: 280px; */
+  /* border-radius: 12px; */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.carousel .movie-card .movie-name p{
+  white-space: normal;
+}
+
+/* mobile version */
+@media only screen and (max-width:834px){
+  .headerComponent{
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .headerComponent div{
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #FFFFFF;
+   
+   }
+
+   .hero{
+    display: flex;
+    justify-content: center;
+    padding-top: 109px;
+    padding-bottom: 159px;
+    text-align: center;
+   }
+   .hero h1{
+    margin-left: 172px;
+    margin-right: 172px;
+   }
+
+   .searchSection{
+    margin-left: 77px;
+    margin-top: 63px;
+    margin-right: 77px;
+    margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .headerComponent div{
+    margin-left: 0px;
+    margin-top: 16px;
+    margin-bottom: 17.4px;
+    border: 1px solid #FFFFFF;
+   
+   }
+   .headerComponent div p{
+    color: white;
+    margin-left: 10.63px;
+    margin-right: 9.68px;
+    margin-top: 7.83px;
+    margin-bottom: 7.31px;
+    }
+  .searchSection{
+    margin-left: 28px;
+    margin-top: 56px;
+    margin-right: 27px;
+    margin-bottom: 48px;
+  }
+  .searchSection p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+  }
+  .searchSection input{
+    height: 34px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+  .movieSection{
+    margin-top: 0px;
+    margin-left: 28px;
+  }
+  .movieSection p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0px;
+  }
+  .carousel .movie-card{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    /* background-color: yellow; */
+  }
+  .carousel .movie-card .movie-name{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
